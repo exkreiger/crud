@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 import rootReducer from './rootReducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -17,9 +18,12 @@ const store = createStore(
 );
 
 ReactDOM.render(
-    <Provider store = {store}>
-        <App />
-    </Provider>,
+    <Router>
+        <Provider store = {store}>
+        {/* <div><Route exact path="/" component={App} /></div> */}
+            <App />
+        </Provider>    
+    </Router>,
     document.getElementById('root')
     );
 
