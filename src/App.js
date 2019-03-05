@@ -14,7 +14,7 @@ class App extends Component {
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" ></link>
         <div className="App" >
           <header className="App-header">
-            <h1>Vendor System</h1>
+            <h1 id="title">Vendor Tracking System</h1>
                 {/* <img src={logo} className="App-logo" alt="logo" /> */}
               <nav>
                   <button class="w3-button w3-white w3-round-xxlarge w3-hover-aqua"><Link to="loads" id="link">Loads</Link></button>
